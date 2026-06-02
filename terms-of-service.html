@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Termos de Serviço — Trilha Performance Digital</title>
+  <meta name="description" content="Termos de Serviço da Trilha Performance Digital. Leia as condições de uso dos nossos produtos e serviços." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            orange:  '#ED4E23',
+            beige:   '#EBEBE4',
+            card:    '#F4F4EE',
+            coal:    '#212121',
+            shape:   '#C8C8C0',
+            forest:  '#343B33',
+            muted:   '#717D71',
+            border:  '#D4D4CC',
+          },
+          fontFamily: {
+            sans: ['PolySans', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    @font-face {
+      font-family: 'PolySans';
+      src: url('design-system/assets/PolySans_Neutral.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'PolySans', system-ui, sans-serif;
+      background-color: #EBEBE4;
+      color: #212121;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #EBEBE4; }
+    ::-webkit-scrollbar-thumb { background: #ED4E23; border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #c23d1c; }
+
+    .toc-link {
+      position: relative;
+      transition: color 200ms ease;
+    }
+    .toc-link:hover { color: #ED4E23; }
+    .toc-link.active {
+      color: #ED4E23;
+      font-weight: 600;
+    }
+    .toc-link.active::before {
+      content: '';
+      display: inline-block;
+      width: 3px;
+      height: 100%;
+      background: #ED4E23;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 0 2px 2px 0;
+    }
+
+    .section-block {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 400ms ease, transform 400ms ease;
+    }
+    .section-block.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50%       { transform: translateY(-8px) rotate(3deg); }
+    }
+    .shape-float { animation: float 6s ease-in-out infinite; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .shape-float { animation: none; }
+      .section-block { opacity: 1; transform: none; transition: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
+  <header style="background-color:#343B33;" class="sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3 cursor-pointer group" aria-label="Ir para página inicial">
+        <img
+          src="design-system/assets/logo-trilha.png"
+          alt="Trilha Performance Digital"
+          class="h-8 w-auto group-hover:opacity-90 transition-opacity duration-200"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+        />
+        <span class="hidden text-white font-semibold text-sm tracking-wide">Trilha Performance Digital</span>
+      </a>
+      <nav class="flex items-center gap-6">
+        <a href="privacy-policy.html" class="text-sm text-white/70 hover:text-white transition-colors duration-200 cursor-pointer">
+          Privacidade
+        </a>
+        <a href="terms-of-service.html" style="color:#ED4E23;" class="text-sm font-semibold transition-opacity duration-200" aria-current="page">
+          Termos
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+  <section class="relative overflow-hidden" style="background-color:#343B33; padding:64px 0 72px;">
+    <!-- Geometric shapes -->
+    <div class="absolute top-8 right-16 w-28 h-28 opacity-10 shape-float" style="background:#C8C8C0; border-radius:4px; transform:rotate(20deg);"></div>
+    <div class="absolute bottom-6 left-10 w-16 h-16 rounded-full opacity-10 shape-float" style="background:#C8C8C0; animation-delay:2s;"></div>
+    <div class="absolute top-20 right-1/3 w-8 h-8 opacity-10 shape-float" style="background:#ED4E23; border-radius:4px; animation-delay:3.5s;"></div>
+
+    <div class="max-w-6xl mx-auto px-6 relative z-10">
+      <div class="max-w-2xl">
+        <span class="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase mb-4" style="color:#ED4E23;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          Documento Legal
+        </span>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight text-white mb-4">
+          Termos de<br />Serviço
+        </h1>
+        <p class="text-base leading-relaxed" style="color:#C8C8C0;">
+          Última atualização: <time datetime="2026-06-02">02 de junho de 2026</time>
+        </p>
+        <p class="text-base leading-relaxed mt-2" style="color:#C8C8C0; max-width:520px;">
+          Ao utilizar os serviços da Trilha Performance Digital, você concorda com os termos e condições descritos neste documento. Leia com atenção antes de prosseguir.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ MAIN CONTENT ═══════════════════════════ -->
+  <main class="max-w-6xl mx-auto px-6 py-12 lg:grid lg:grid-cols-[280px_1fr] lg:gap-12 lg:items-start">
+
+    <!-- TABLE OF CONTENTS (sidebar) -->
+    <aside class="hidden lg:block" aria-label="Índice de seções">
+      <div class="sticky top-24 rounded-2xl p-6" style="background:#F4F4EE; border:1px solid #D4D4CC;">
+        <p class="text-xs font-semibold tracking-widest uppercase mb-4" style="color:#717D71;">Índice</p>
+        <nav>
+          <ol class="space-y-1">
+            <li><a href="#aceitacao"         class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">1. Aceitação dos Termos</a></li>
+            <li><a href="#servicos"          class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">2. Descrição dos Serviços</a></li>
+            <li><a href="#cadastro"          class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">3. Cadastro e Conta</a></li>
+            <li><a href="#pagamentos"        class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">4. Pagamentos e Planos</a></li>
+            <li><a href="#reembolso"         class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">5. Cancelamento e Reembolso</a></li>
+            <li><a href="#propriedade"       class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">6. Propriedade Intelectual</a></li>
+            <li><a href="#uso-aceitavel"     class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">7. Uso Aceitável</a></li>
+            <li><a href="#limitacao"         class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">8. Limitação de Responsabilidade</a></li>
+            <li><a href="#suspensao"         class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">9. Suspensão e Encerramento</a></li>
+            <li><a href="#legislacao"        class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">10. Legislação Aplicável</a></li>
+            <li><a href="#alteracoes-termos" class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">11. Alterações nos Termos</a></li>
+            <li><a href="#contato-termos"    class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">12. Contato</a></li>
+          </ol>
+        </nav>
+        <div class="mt-6 pt-5" style="border-top:1px solid #D4D4CC;">
+          <p class="text-xs leading-relaxed" style="color:#717D71;">
+            Dúvidas sobre os termos?
+          </p>
+          <a href="mailto:juridico@trilhaperformancedigital.com.br" class="text-xs font-semibold mt-1 inline-block hover:opacity-80 transition-opacity duration-200" style="color:#ED4E23;">
+            juridico@trilhaperformancedigital.com.br
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ARTICLE CONTENT -->
+    <article class="min-w-0">
+
+      <!-- Mobile TOC -->
+      <details class="lg:hidden mb-8 rounded-xl overflow-hidden" style="background:#F4F4EE; border:1px solid #D4D4CC;">
+        <summary class="cursor-pointer px-5 py-4 text-sm font-semibold flex items-center justify-between" style="color:#212121;">
+          <span>Índice de Seções</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <nav class="px-5 pb-4">
+          <ol class="space-y-2">
+            <li><a href="#aceitacao"         class="block text-sm py-0.5" style="color:#717D71;">1. Aceitação dos Termos</a></li>
+            <li><a href="#servicos"          class="block text-sm py-0.5" style="color:#717D71;">2. Descrição dos Serviços</a></li>
+            <li><a href="#cadastro"          class="block text-sm py-0.5" style="color:#717D71;">3. Cadastro e Conta</a></li>
+            <li><a href="#pagamentos"        class="block text-sm py-0.5" style="color:#717D71;">4. Pagamentos e Planos</a></li>
+            <li><a href="#reembolso"         class="block text-sm py-0.5" style="color:#717D71;">5. Cancelamento e Reembolso</a></li>
+            <li><a href="#propriedade"       class="block text-sm py-0.5" style="color:#717D71;">6. Propriedade Intelectual</a></li>
+            <li><a href="#uso-aceitavel"     class="block text-sm py-0.5" style="color:#717D71;">7. Uso Aceitável</a></li>
+            <li><a href="#limitacao"         class="block text-sm py-0.5" style="color:#717D71;">8. Limitação de Responsabilidade</a></li>
+            <li><a href="#suspensao"         class="block text-sm py-0.5" style="color:#717D71;">9. Suspensão e Encerramento</a></li>
+            <li><a href="#legislacao"        class="block text-sm py-0.5" style="color:#717D71;">10. Legislação Aplicável</a></li>
+            <li><a href="#alteracoes-termos" class="block text-sm py-0.5" style="color:#717D71;">11. Alterações nos Termos</a></li>
+            <li><a href="#contato-termos"    class="block text-sm py-0.5" style="color:#717D71;">12. Contato</a></li>
+          </ol>
+        </nav>
+      </details>
+
+      <!-- ── 1. Aceitação ── -->
+      <section id="aceitacao" class="section-block mb-10">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">1</span>
+          <h2 class="text-xl font-bold" style="color:#212121;">Aceitação dos Termos</h2>
+        </div>
+        <div class="pl-11 space-y-3 text-base leading-relaxed" style="color:#212121;">
+          <p>Estes Termos de Serviço ("<strong>Termos</strong>") constituem um contrato vinculante entre você ("<strong>Usuário</strong>") e a <strong>Trilha Performance Digital</strong> ("<strong>Empresa</strong>", "<strong>nós</strong>").</p>
+          <p>Ao criar uma conta, acessar nossos conteúdos ou utilizar qualquer serviço oferecido, você declara ter lido, compreendido e concordado com todos os termos aqui dispostos, incluindo nossa <a href="privacy-policy.html" class="font-semibold hover:opacity-80 transition-opacity" style="color:#ED4E23;">Política de Privacidade</a>.</p>
+          <p class="text-sm rounded-lg px-4 py-3" style="background:#F4F4EE; border-left:3px solid #ED4E23; color:#717D71;">
+            <strong style="color:#212121;">Importante:</strong> Se você não concordar com estes Termos, não utilize nossos serviços. O uso continuado após alterações implica aceitação das novas condições.
+          </p>
+        </div>
+      </section>
+
+      <hr style="border-color:#D4D4CC; margin:0 0 2.5rem 0;" />
+
+      <!-- ── 2. Serviços ── -->
+      <section id="servicos" class="section-block mb-10">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">2</span>
+          <h2 class="text-xl font-bold" style="color:#212121;">Descrição dos Serviços</h2>
+        </div>
+        <div class="pl-11 space-y-3 text-base leading-relaxed" style="color:#212121;">
+          <p>A Trilha Performance Digital oferece plataforma de educação e aceleração em marketing e performance digital, incluindo:</p>
+          <div class="grid sm:grid-cols-2 gap-3 mt-2">
+            <div class="flex gap-3 rounded-xl p-4" style="background:#F4F4EE; border:1px solid #D4D4CC;">
+              <svg class="flex-shrink-0 mt-0.5" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ED4E23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              <div>
+                <p class="font-semibold text-sm">Cursos e Trilhas</p>
+                <p class="text-xs mt-0.5" style="color:#717D71;">Conteúdos educacionais em vídeo, texto e exercícios práticos.</p>
+              </div>
+            </div>
+            <div class="flex gap-3 rounded-xl p-4" style="background:#F4F4EE; border:1px solid #D4D4CC;">
+              <svg class="flex-shrink-0 mt-0.5" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ED4E23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <div>
+                <p class="font-semibold text-sm">Comunidade</p>
+                <p class="text-xs mt-0.5" style="color:#717D71;">Acesso a grupos, fóruns e networking com outros profissionais.</p>
+              </div>
+            </div>
+            <div class="flex gap-3 rounded-xl p-4" style="background:#F4F4EE; border:1px solid #D4D4CC;">
+              <svg class="flex-shrink-0 mt-0.5" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ED4E23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <div>
+                <p class="font-semibold text-sm">Mentorias</p>
+                <p class="text-xs mt-0.5" style="color:#717D71;">Sessões ao vivo e gravadas com especialistas de mercado.</p>
+              </div>
+            </div>
+            <div class="flex gap-3 rounded-xl p-4" style="background:#F4F4EE; border:1px solid #D4D4CC;">
+              <svg class="flex-shrink-0 mt-0.5" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ED4E23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              <div>
+                <p class="font-semibold text-sm">Ferramentas</p>
+                <p class="text-xs mt-0.5" style="color:#717D71;">Planilhas, templates e recursos exclusivos para aplicação prática.</p>
+              </div>
+            </div>
+          </div>
+          <p>Reservamo-nos o direito de modificar, suspender ou descontinuar qualquer funcionalidade a qualquer momento, com aviso prévio quando possível.</p>
+        </div>
+      </section>
+
+      <hr style="border-color:#D4D4CC; margin:0 0 2.5rem 0;" />
+
+      <!-- ── 3. Cadastro ── -->
+      <section id="cadastro" class="section-block mb-10">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">3</span>
+          <h2 class="text-xl font-bold" style="color:#212121;">Cadastro e Conta</h2>
+        </div>
+        <div class="pl-11 space-y-3 text-base leading-relaxed" style="color:#212121;">
+          <p>Para acessar determinados recursos, é necessário criar uma conta. Ao fazê-lo, você declara que:</p>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Tem pelo menos 18 anos ou a maioridade legal em sua jurisdição;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>As informações fornecidas são verdadeiras, precisas e atualizadas;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>É o único responsável pela guarda e confidencialidade da sua senha;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Notificará imediatamente qualquer acesso não autorizado à sua conta.</span>
+            </li>
+          </ul>
+          <p>Não permitimos a transferência, venda ou compartilhamento de contas. Cada conta é pessoal e intransferível.</p>
+        </div>
+      </section>
+
+      <hr style="border-color:#D4D4CC; margin:0 0 2.5rem 0;" />
+
+      <!-- ── 4. Pagamentos ── -->
+      <section id="pagamentos" class="section-block mb-10">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">4</span>
+          <h2 class="text-xl font-bold" style="color:#212121;">Pagamentos e Planos</h2>
+        </div>
+        <div class="pl-11 space-y-3 text-base leading-relaxed" style="color:#212121;">
+          <p>Os valores dos planos e serviços estão disponíveis em nossa plataforma e podem ser alterados com aviso prévio de <strong>30 dias</strong>. Ao adquirir um plano:</p>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>O pagamento é cobrado na data de contratação e nas datas de renovação seguintes;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Planos anuais oferecem desconto em relação ao plano mensal e são cobrados antecipadamente;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Em caso de falha no pagamento, o acesso poderá ser suspenso após <strong>5 dias</strong> de inadimplência;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Os preços incluem os impostos aplicáveis na forma da lei.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <hr style="border-color:#D4D4CC; margin:0 0 2.5rem 0;" />
+
+      <!-- ── 5. Reembolso ── -->
+      <section id="reembolso" class="section-block mb-10">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">5</span>
+          <h2 class="text-xl font-bold" style="color:#212121;">Cancelamento e Reembolso</h2>
+        </div>
+        <div class="pl-11 space-y-3 text-base leading-relaxed" style="color:#212121;">
+          <p>Você pode cancelar sua assinatura a qualquer momento pelas configurações da conta ou via suporte.</p>
+
+          <div class="rounded-xl overflow-hidden" style="border:1px solid #D4D4CC;">
+            <div class="px-5 py-3 text-sm font-semibold" style="background:#343B33; color:white;">
+              Política de Reembolso
+            </div>
+            <div class="divide-y" style="border-color:#D4D4CC;">
+              <div class="px-5 py-4 flex gap-4 items-start">
+                <span class="flex-shrink-0 text-xs font-bold px-2 py-1 rounded-full text-white" style="background:#ED4E23;">7 dias</span>
+                <div>
+                  <p class="text-sm font-semibold">Garantia de Satisfação</p>
+                  <p class="text-sm mt-0.5" style="color:#717D71;">Reembolso integral solicitado em até 7 dias após a primeira compra, sem justificativa (conforme CDC, art. 49).</p>
+                </div>
+              </div>
+              <div class="px-5 py-4 flex gap-4 items-start">
+                <span class="flex-shrink-0 text-xs font-bold px-2 py-1 rounded-full text-white" style="background:#717D71;">Após 7 dias</span>
+                <div>
+                  <p class="text-sm font-semibold">Cancelamento sem reembolso</p>
+                  <p class="text-sm mt-0.5" style="color:#717D71;">O acesso permanece ativo até o fim do período pago. Não haverá reembolso proporcional.</p>
+                </div>
+              </div>
+              <div class="px-5 py-4 flex gap-4 items-start">
+                <span class="flex-shrink-0 text-xs font-bold px-2 py-1 rounded-full" style="background:#F4F4EE; color:#343B33; border:1px solid #D4D4CC;">Exceção</span>
+                <div>
+                  <p class="text-sm font-semibold">Falha técnica da Empresa</p>
+                  <p class="text-sm mt-0.5" style="color:#717D71;">Reembolso proporcional caso a indisponibilidade do serviço ultrapasse 72h consecutivas por falha nossa.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr style="border-color:#D4D4CC; margin:0 0 2.5rem 0;" />
+
+      <!-- ── 6. Propriedade Intelectual ── -->
+      <section id="propriedade" class="section-block mb-10">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">6</span>
+          <h2 class="text-xl font-bold" style="color:#212121;">Propriedade Intelectual</h2>
+        </div>
+        <div class="pl-11 space-y-3 text-base leading-relaxed" style="color:#212121;">
+          <p>Todo o conteúdo disponível na plataforma — incluindo, mas não se limitando a textos, vídeos, áudios, imagens, logos, marcas, código-fonte, metodologias e materiais educacionais — é de propriedade exclusiva da Trilha Performance Digital ou de seus licenciantes.</p>
+          <p>Ao adquirir um plano, você recebe uma <strong>licença pessoal, não exclusiva, intransferível e revogável</strong> para acessar os conteúdos exclusivamente para uso próprio e não comercial.</p>
+          <p>É expressamente <strong>proibido</strong>:</p>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Reproduzir, distribuir ou comercializar qualquer conteúdo da plataforma;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Fazer engenharia reversa de qualquer software ou metodologia proprietária;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Usar as marcas da Empresa sem autorização prévia por escrito.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <hr style="border-color:#D4D4CC; margin:0 0 2.5rem 0;" />
+
+      <!-- ── 7. Uso Aceitável ── -->
+      <section id="uso-aceitavel" class="section-block mb-10">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">7</span>
+          <h2 class="text-xl font-bold" style="color:#212121;">Uso Aceitável</h2>
+        </div>
+        <div class="pl-11 space-y-3 text-base leading-relaxed" style="color:#212121;">
+          <p>Ao utilizar nossos serviços, você concorda em não:</p>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Publicar conteúdo ofensivo, discriminatório, difamatório ou ilegal;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Fazer spam, phishing ou qualquer forma de comunicação não solicitada;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Tentar acessar sistemas, dados ou contas de outros usuários sem autorização;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Usar bots, scrapers ou automações para extrair conteúdo da plataforma;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Realizar qualquer atividade que comprometa a segurança ou desempenho da plataforma.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <hr style="border-color:#D4D4CC; margin:0 0 2.5rem 0;" />
+
+      <!-- ── 8. Limitação ── -->
+      <section id="limitacao" class="section-block mb-10">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">8</span>
+          <h2 class="text-xl font-bold" style="color:#212121;">Limitação de Responsabilidade</h2>
+        </div>
+        <div class="pl-11 space-y-3 text-base leading-relaxed" style="color:#212121;">
+          <p>Na extensão máxima permitida pela legislação aplicável:</p>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Os serviços são fornecidos "<strong>como estão</strong>", sem garantias de resultados específicos;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Não nos responsabilizamos por lucros cessantes, perda de dados ou danos indiretos decorrentes do uso ou da impossibilidade de uso dos serviços;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Nossa responsabilidade total estará limitada ao valor pago pelo usuário nos últimos 12 meses.</span>
+            </li>
+          </ul>
+          <p class="text-sm rounded-lg px-4 py-3 mt-2" style="background:#F4F4EE; border-left:3px solid #717D71; color:#717D71;">
+            Esta limitação não se aplica a danos causados por dolo ou culpa grave da Empresa, nem em hipóteses que a legislação brasileira não permita tal exclusão.
+          </p>
+        </div>
+      </section>
+
+      <hr style="border-color:#D4D4CC; margin:0 0 2.5rem 0;" />
+
+      <!-- ── 9. Suspensão ── -->
+      <section id="suspensao" class="section-block mb-10">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">9</span>
+          <h2 class="text-xl font-bold" style="color:#212121;">Suspensão e Encerramento de Conta</h2>
+        </div>
+        <div class="pl-11 space-y-3 text-base leading-relaxed" style="color:#212121;">
+          <p>Podemos suspender ou encerrar sua conta, com ou sem aviso prévio, caso:</p>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Haja violação de qualquer disposição destes Termos;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Identifiquemos uso fraudulento, abusivo ou ilegal da conta;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Haja inadimplência por mais de 15 dias corridos;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Exigência judicial ou regulatória.</span>
+            </li>
+          </ul>
+          <p>Em caso de encerramento por iniciativa sua, os dados serão tratados conforme nossa Política de Privacidade.</p>
+        </div>
+      </section>
+
+      <hr style="border-color:#D4D4CC; margin:0 0 2.5rem 0;" />
+
+      <!-- ── 10. Legislação ── -->
+      <section id="legislacao" class="section-block mb-10">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">10</span>
+          <h2 class="text-xl font-bold" style="color:#212121;">Legislação Aplicável e Foro</h2>
+        </div>
+        <div class="pl-11 space-y-3 text-base leading-relaxed" style="color:#212121;">
+          <p>Estes Termos são regidos pelas leis da <strong>República Federativa do Brasil</strong>. As partes elegem o foro da comarca de <strong>São Paulo/SP</strong> como competente para dirimir quaisquer disputas decorrentes deste instrumento, com renúncia expressa a qualquer outro, por mais privilegiado que seja.</p>
+          <p>Antes de qualquer medida judicial, as partes comprometem-se a buscar solução consensual em até <strong>30 dias</strong> a partir da comunicação formal do conflito.</p>
+        </div>
+      </section>
+
+      <hr style="border-color:#D4D4CC; margin:0 0 2.5rem 0;" />
+
+      <!-- ── 11. Alterações ── -->
+      <section id="alteracoes-termos" class="section-block mb-10">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">11</span>
+          <h2 class="text-xl font-bold" style="color:#212121;">Alterações nos Termos</h2>
+        </div>
+        <div class="pl-11 space-y-3 text-base leading-relaxed" style="color:#212121;">
+          <p>Reservamo-nos o direito de modificar estes Termos a qualquer momento. Alterações substanciais serão comunicadas com pelo menos <strong>15 dias de antecedência</strong> por e-mail ou notificação na plataforma.</p>
+          <p>A versão mais recente estará sempre disponível nesta página, identificada pela data de última atualização no topo do documento.</p>
+        </div>
+      </section>
+
+      <hr style="border-color:#D4D4CC; margin:0 0 2.5rem 0;" />
+
+      <!-- ── 12. Contato ── -->
+      <section id="contato-termos" class="section-block mb-10">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">12</span>
+          <h2 class="text-xl font-bold" style="color:#212121;">Contato</h2>
+        </div>
+        <div class="pl-11 space-y-3 text-base leading-relaxed" style="color:#212121;">
+          <p>Para dúvidas, notificações legais ou solicitações relacionadas a estes Termos:</p>
+          <div class="rounded-xl p-5" style="background:#F4F4EE; border:1px solid #D4D4CC;">
+            <p class="font-bold text-base">Trilha Performance Digital</p>
+            <p class="text-sm mt-1" style="color:#717D71;">Departamento Jurídico</p>
+            <div class="mt-3 space-y-2">
+              <p class="text-sm flex items-center gap-2">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ED4E23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <a href="mailto:juridico@trilhaperformancedigital.com.br" class="hover:opacity-80 transition-opacity" style="color:#ED4E23;">juridico@trilhaperformancedigital.com.br</a>
+              </p>
+              <p class="text-sm flex items-center gap-2">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ED4E23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <a href="privacy-policy.html" class="hover:opacity-80 transition-opacity" style="color:#ED4E23;">Ver também: Política de Privacidade</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer style="background-color:#343B33;" class="mt-8">
+    <div class="max-w-6xl mx-auto px-6 py-10">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <img
+            src="design-system/assets/logo-trilha.png"
+            alt="Trilha Performance Digital"
+            class="h-7 w-auto opacity-80"
+            onerror="this.style.display='none'"
+          />
+          <span class="text-sm font-semibold text-white/80">Trilha Performance Digital</span>
+        </div>
+        <nav class="flex flex-wrap gap-x-6 gap-y-2" aria-label="Links legais">
+          <a href="privacy-policy.html" class="text-sm text-white/60 hover:text-white transition-colors duration-200 cursor-pointer">Política de Privacidade</a>
+          <a href="terms-of-service.html" class="text-sm font-semibold transition-opacity duration-200" style="color:#ED4E23;" aria-current="page">Termos de Serviço</a>
+        </nav>
+      </div>
+      <div class="mt-8 pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2" style="border-top:1px solid rgba(200,200,192,0.2);">
+        <p class="text-xs" style="color:#717D71;">© <span id="footer-year">2026</span> Trilha Performance Digital. Todos os direitos reservados.</p>
+        <p class="text-xs" style="color:#717D71;">CNPJ: 00.000.000/0001-00</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.section-block').forEach(el => observer.observe(el));
+
+    const sections = document.querySelectorAll('section[id]');
+    const tocLinks = document.querySelectorAll('.toc-link');
+
+    const tocObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          tocLinks.forEach(link => link.classList.remove('active'));
+          const active = document.querySelector(`.toc-link[href="#${entry.target.id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { threshold: 0.5, rootMargin: '-20% 0px -60% 0px' });
+
+    sections.forEach(s => tocObserver.observe(s));
+  </script>
+</body>
+</html>
