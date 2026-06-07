@@ -47,13 +47,11 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Scrollbar */
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: #EBEBE4; }
     ::-webkit-scrollbar-thumb { background: #ED4E23; border-radius: 9999px; }
     ::-webkit-scrollbar-thumb:hover { background: #c23d1c; }
 
-    /* TOC active state */
     .toc-link.active {
       color: #ED4E23;
       font-weight: 600;
@@ -75,7 +73,6 @@
     }
     .toc-link:hover { color: #ED4E23; }
 
-    /* Section fade-in */
     .section-block {
       opacity: 0;
       transform: translateY(16px);
@@ -86,7 +83,6 @@
       transform: translateY(0);
     }
 
-    /* Geometric shape pulse */
     @keyframes float {
       0%, 100% { transform: translateY(0px) rotate(0deg); }
       50%       { transform: translateY(-8px) rotate(3deg); }
@@ -126,7 +122,6 @@
 
   <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
   <section class="relative overflow-hidden" style="background-color:#343B33; padding: 64px 0 72px;">
-    <!-- Geometric shapes -->
     <div class="absolute top-8 right-12 w-32 h-32 rounded-full opacity-10 shape-float" style="background:#C8C8C0;"></div>
     <div class="absolute bottom-4 left-8 w-20 h-20 opacity-10 shape-float" style="background:#C8C8C0; border-radius:4px; transform:rotate(45deg); animation-delay:2s;"></div>
     <div class="absolute top-16 left-1/3 w-10 h-10 rounded-full opacity-10 shape-float" style="background:#ED4E23; animation-delay:4s;"></div>
@@ -141,10 +136,10 @@
           Política de<br />Privacidade
         </h1>
         <p class="text-base leading-relaxed" style="color:#C8C8C0;">
-          Última atualização: <time datetime="2026-06-02">02 de junho de 2026</time>
+          Última atualização: <time datetime="2026-06-07">07 de junho de 2026</time>
         </p>
         <p class="text-base leading-relaxed mt-2" style="color:#C8C8C0; max-width:520px;">
-          Explicamos de forma clara como coletamos, usamos, armazenamos e protegemos seus dados pessoais ao utilizar nossos serviços.
+          Sua privacidade é nossa prioridade. Explicamos de forma clara e transparente como coletamos, usamos, armazenamos e protegemos seus dados pessoais ao utilizar nossos serviços.
         </p>
       </div>
     </div>
@@ -159,17 +154,18 @@
         <p class="text-xs font-semibold tracking-widest uppercase mb-4" style="color:#717D71;">Índice</p>
         <nav>
           <ol class="space-y-1">
-            <li><a href="#introducao"        class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">1. Introdução</a></li>
-            <li><a href="#dados-coletados"   class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">2. Dados Coletados</a></li>
-            <li><a href="#finalidade"        class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">3. Finalidade do Uso</a></li>
-            <li><a href="#compartilhamento"  class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">4. Compartilhamento</a></li>
-            <li><a href="#cookies"           class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">5. Cookies</a></li>
-            <li><a href="#retencao"          class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">6. Retenção de Dados</a></li>
-            <li><a href="#seguranca"         class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">7. Segurança</a></li>
-            <li><a href="#seus-direitos"     class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">8. Seus Direitos (LGPD)</a></li>
-            <li><a href="#menores"           class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">9. Menores de Idade</a></li>
-            <li><a href="#alteracoes"        class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">10. Alterações</a></li>
-            <li><a href="#contato"           class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">11. Contato</a></li>
+            <li><a href="#introducao"          class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">1. Introdução e Compromisso</a></li>
+            <li><a href="#dados-coletados"     class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">2. Dados Coletados</a></li>
+            <li><a href="#finalidade"          class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">3. Finalidade do Uso</a></li>
+            <li><a href="#compartilhamento"    class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">4. Compartilhamento de Dados</a></li>
+            <li><a href="#transferencia"       class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">5. Transferência Internacional</a></li>
+            <li><a href="#cookies"             class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">6. Cookies</a></li>
+            <li><a href="#retencao"            class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">7. Retenção de Dados</a></li>
+            <li><a href="#seguranca"           class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">8. Segurança</a></li>
+            <li><a href="#seus-direitos"       class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">9. Seus Direitos (LGPD)</a></li>
+            <li><a href="#menores"             class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">10. Menores de Idade</a></li>
+            <li><a href="#alteracoes"          class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">11. Alterações</a></li>
+            <li><a href="#contato"             class="toc-link block text-sm py-1.5 pl-3" style="color:#212121;">12. Contato e DPO</a></li>
           </ol>
         </nav>
         <div class="mt-6 pt-5" style="border-top:1px solid #D4D4CC;">
@@ -194,31 +190,51 @@
         </summary>
         <nav class="px-5 pb-4">
           <ol class="space-y-2">
-            <li><a href="#introducao"       class="block text-sm py-0.5 hover:text-orange-600 transition-colors" style="color:#717D71;">1. Introdução</a></li>
-            <li><a href="#dados-coletados"  class="block text-sm py-0.5 hover:text-orange-600 transition-colors" style="color:#717D71;">2. Dados Coletados</a></li>
-            <li><a href="#finalidade"       class="block text-sm py-0.5 hover:text-orange-600 transition-colors" style="color:#717D71;">3. Finalidade do Uso</a></li>
-            <li><a href="#compartilhamento" class="block text-sm py-0.5 hover:text-orange-600 transition-colors" style="color:#717D71;">4. Compartilhamento</a></li>
-            <li><a href="#cookies"          class="block text-sm py-0.5 hover:text-orange-600 transition-colors" style="color:#717D71;">5. Cookies</a></li>
-            <li><a href="#retencao"         class="block text-sm py-0.5 hover:text-orange-600 transition-colors" style="color:#717D71;">6. Retenção de Dados</a></li>
-            <li><a href="#seguranca"        class="block text-sm py-0.5 hover:text-orange-600 transition-colors" style="color:#717D71;">7. Segurança</a></li>
-            <li><a href="#seus-direitos"    class="block text-sm py-0.5 hover:text-orange-600 transition-colors" style="color:#717D71;">8. Seus Direitos (LGPD)</a></li>
-            <li><a href="#menores"          class="block text-sm py-0.5 hover:text-orange-600 transition-colors" style="color:#717D71;">9. Menores de Idade</a></li>
-            <li><a href="#alteracoes"       class="block text-sm py-0.5 hover:text-orange-600 transition-colors" style="color:#717D71;">10. Alterações</a></li>
-            <li><a href="#contato"          class="block text-sm py-0.5 hover:text-orange-600 transition-colors" style="color:#717D71;">11. Contato</a></li>
+            <li><a href="#introducao"       class="block text-sm py-0.5" style="color:#717D71;">1. Introdução e Compromisso</a></li>
+            <li><a href="#dados-coletados"  class="block text-sm py-0.5" style="color:#717D71;">2. Dados Coletados</a></li>
+            <li><a href="#finalidade"       class="block text-sm py-0.5" style="color:#717D71;">3. Finalidade do Uso</a></li>
+            <li><a href="#compartilhamento" class="block text-sm py-0.5" style="color:#717D71;">4. Compartilhamento de Dados</a></li>
+            <li><a href="#transferencia"    class="block text-sm py-0.5" style="color:#717D71;">5. Transferência Internacional</a></li>
+            <li><a href="#cookies"          class="block text-sm py-0.5" style="color:#717D71;">6. Cookies</a></li>
+            <li><a href="#retencao"         class="block text-sm py-0.5" style="color:#717D71;">7. Retenção de Dados</a></li>
+            <li><a href="#seguranca"        class="block text-sm py-0.5" style="color:#717D71;">8. Segurança</a></li>
+            <li><a href="#seus-direitos"    class="block text-sm py-0.5" style="color:#717D71;">9. Seus Direitos (LGPD)</a></li>
+            <li><a href="#menores"          class="block text-sm py-0.5" style="color:#717D71;">10. Menores de Idade</a></li>
+            <li><a href="#alteracoes"       class="block text-sm py-0.5" style="color:#717D71;">11. Alterações</a></li>
+            <li><a href="#contato"          class="block text-sm py-0.5" style="color:#717D71;">12. Contato e DPO</a></li>
           </ol>
         </nav>
       </details>
 
-      <!-- ── 1. Introdução ── -->
+      <!-- ── 1. Introdução e Compromisso ── -->
       <section id="introducao" class="section-block mb-10">
         <div class="flex items-center gap-3 mb-4">
           <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">1</span>
-          <h2 class="text-xl font-bold" style="color:#212121;">Introdução</h2>
+          <h2 class="text-xl font-bold" style="color:#212121;">Introdução e Compromisso</h2>
         </div>
         <div class="pl-11 space-y-3 text-base leading-relaxed" style="color:#212121;">
-          <p>A <strong>Trilha Performance Digital</strong> ("<strong>nós</strong>", "<strong>nosso</strong>" ou "<strong>Empresa</strong>") está comprometida com a proteção da sua privacidade. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e compartilhamos suas informações pessoais quando você utiliza nossos produtos, serviços, plataformas e sites.</p>
-          <p>Ao acessar ou utilizar nossos serviços, você concorda com os termos desta Política. Caso não concorde, por favor, não utilize nossos serviços.</p>
-          <p>Esta Política está em conformidade com a <strong>Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD)</strong> e demais regulamentações aplicáveis.</p>
+          <p>A <strong>Trilha Performance Digital</strong> ("<strong>nós</strong>", "<strong>nosso</strong>" ou "<strong>Empresa</strong>") tem a privacidade como prioridade máxima. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e compartilhamos suas informações pessoais quando você utiliza nossa plataforma de educação e aceleração em marketing digital.</p>
+          <p>Ao acessar ou utilizar nossos serviços, você concorda com os termos desta Política. Caso não concorde com qualquer disposição aqui descrita, por favor, não utilize nossos serviços.</p>
+
+          <div class="grid sm:grid-cols-3 gap-3 mt-4">
+            <div class="rounded-xl p-4 text-center" style="background:#F4F4EE; border:1px solid #D4D4CC;">
+              <svg class="mx-auto mb-2" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ED4E23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <p class="font-semibold text-sm">Segurança</p>
+              <p class="text-xs mt-1" style="color:#717D71;">Seus dados protegidos com tecnologia de ponta.</p>
+            </div>
+            <div class="rounded-xl p-4 text-center" style="background:#F4F4EE; border:1px solid #D4D4CC;">
+              <svg class="mx-auto mb-2" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ED4E23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <p class="font-semibold text-sm">Transparência</p>
+              <p class="text-xs mt-1" style="color:#717D71;">Clareza total sobre o que coletamos e por quê.</p>
+            </div>
+            <div class="rounded-xl p-4 text-center" style="background:#F4F4EE; border:1px solid #D4D4CC;">
+              <svg class="mx-auto mb-2" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ED4E23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <p class="font-semibold text-sm">Controle</p>
+              <p class="text-xs mt-1" style="color:#717D71;">Você decide como seus dados são utilizados.</p>
+            </div>
+          </div>
+
+          <p>Esta Política está em conformidade com a <strong>Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD)</strong>, o Marco Civil da Internet (Lei nº 12.965/2014) e demais regulamentações aplicáveis.</p>
         </div>
       </section>
 
@@ -231,35 +247,42 @@
           <h2 class="text-xl font-bold" style="color:#212121;">Dados Coletados</h2>
         </div>
         <div class="pl-11 space-y-4 text-base leading-relaxed" style="color:#212121;">
-          <p>Podemos coletar as seguintes categorias de dados:</p>
+          <p>Coletamos diferentes categorias de dados conforme a forma como você interage com nossa plataforma:</p>
 
-          <div class="rounded-xl p-5 space-y-3" style="background:#F4F4EE; border:1px solid #D4D4CC;">
+          <div class="rounded-xl p-5 space-y-4" style="background:#F4F4EE; border:1px solid #D4D4CC;">
             <div class="flex gap-3">
               <svg class="flex-shrink-0 mt-0.5" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ED4E23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
               <div>
                 <p class="font-semibold text-sm">Dados de Identificação</p>
-                <p class="text-sm mt-0.5" style="color:#717D71;">Nome completo, CPF, data de nascimento, endereço de e-mail, telefone e endereço postal.</p>
+                <p class="text-sm mt-0.5" style="color:#717D71;">Nome completo, CPF, data de nascimento, endereço de e-mail, telefone e endereço postal (quando aplicável).</p>
               </div>
             </div>
             <div class="flex gap-3">
               <svg class="flex-shrink-0 mt-0.5" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ED4E23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
               <div>
                 <p class="font-semibold text-sm">Dados de Navegação</p>
-                <p class="text-sm mt-0.5" style="color:#717D71;">Endereço IP, tipo de navegador, sistema operacional, páginas visitadas, tempo de sessão e cliques.</p>
+                <p class="text-sm mt-0.5" style="color:#717D71;">Endereço IP, tipo de navegador, sistema operacional, páginas visitadas, tempo de sessão, cliques e origem do acesso.</p>
               </div>
             </div>
             <div class="flex gap-3">
               <svg class="flex-shrink-0 mt-0.5" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ED4E23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
               <div>
                 <p class="font-semibold text-sm">Dados Financeiros</p>
-                <p class="text-sm mt-0.5" style="color:#717D71;">Informações de pagamento processadas por plataformas seguras de terceiros. Não armazenamos dados de cartão de crédito.</p>
+                <p class="text-sm mt-0.5" style="color:#717D71;">Informações de pagamento processadas por plataformas seguras de terceiros. <strong>Não armazenamos dados de cartão de crédito</strong> em nossos servidores.</p>
+              </div>
+            </div>
+            <div class="flex gap-3">
+              <svg class="flex-shrink-0 mt-0.5" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ED4E23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              <div>
+                <p class="font-semibold text-sm">Dados de Progresso e Aprendizado</p>
+                <p class="text-sm mt-0.5" style="color:#717D71;">Cursos acessados, aulas concluídas, resultados de avaliações, tempo de estudo, materiais baixados e interações na comunidade.</p>
               </div>
             </div>
             <div class="flex gap-3">
               <svg class="flex-shrink-0 mt-0.5" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ED4E23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
               <div>
                 <p class="font-semibold text-sm">Comunicações</p>
-                <p class="text-sm mt-0.5" style="color:#717D71;">Conteúdo de mensagens enviadas ao nosso suporte, pesquisas de satisfação e formulários de contato.</p>
+                <p class="text-sm mt-0.5" style="color:#717D71;">Conteúdo de mensagens enviadas ao nosso suporte, participações em fóruns, pesquisas de satisfação e formulários de contato.</p>
               </div>
             </div>
           </div>
@@ -279,31 +302,35 @@
           <ul class="space-y-2">
             <li class="flex items-start gap-2">
               <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
-              <span>Prestação e melhoria dos nossos serviços educacionais e de performance digital;</span>
+              <span>Prestação, operação e melhoria contínua dos nossos serviços educacionais e da plataforma;</span>
             </li>
             <li class="flex items-start gap-2">
               <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
-              <span>Processamento de pagamentos e gerenciamento de assinaturas;</span>
+              <span>Processamento de pagamentos e gerenciamento de assinaturas e renovações;</span>
             </li>
             <li class="flex items-start gap-2">
               <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
-              <span>Envio de comunicações transacionais, educativas e de marketing (mediante consentimento);</span>
+              <span>Envio de comunicações transacionais (confirmações, cobranças, alertas de acesso) e educacionais;</span>
             </li>
             <li class="flex items-start gap-2">
               <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
-              <span>Análise de comportamento para personalização de conteúdo e recomendações;</span>
+              <span>Envio de comunicações de marketing e novidades da plataforma (mediante consentimento, com opção de cancelamento a qualquer momento);</span>
             </li>
             <li class="flex items-start gap-2">
               <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
-              <span>Cumprimento de obrigações legais e regulatórias;</span>
+              <span>Análise de comportamento e progresso para personalização de conteúdo, recomendações de trilhas e melhoria da experiência de aprendizado;</span>
             </li>
             <li class="flex items-start gap-2">
               <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
-              <span>Prevenção de fraudes e garantia da segurança da plataforma.</span>
+              <span>Cumprimento de obrigações legais, regulatórias e contratuais;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Prevenção a fraudes, segurança da plataforma e proteção de direitos da Empresa e dos usuários.</span>
             </li>
           </ul>
           <p class="text-sm rounded-lg px-4 py-3 mt-4" style="background:#F4F4EE; border-left:3px solid #ED4E23; color:#717D71;">
-            <strong style="color:#212121;">Base legal:</strong> Consentimento do titular, execução de contrato, obrigação legal, legítimo interesse e proteção ao crédito, conforme arts. 7º e 11 da LGPD.
+            <strong style="color:#212121;">Base legal:</strong> Consentimento do titular, execução de contrato, obrigação legal e legítimo interesse, conforme arts. 7º e 11 da LGPD.
           </p>
         </div>
       </section>
@@ -317,11 +344,23 @@
           <h2 class="text-xl font-bold" style="color:#212121;">Compartilhamento de Dados</h2>
         </div>
         <div class="pl-11 space-y-3 text-base leading-relaxed" style="color:#212121;">
-          <p>Não vendemos nem alugamos seus dados pessoais. Podemos compartilhá-los apenas com:</p>
+          <p><strong>Não vendemos, alugamos nem comercializamos seus dados pessoais.</strong> Podemos compartilhá-los, de forma limitada e necessária, apenas com:</p>
           <ul class="space-y-2">
             <li class="flex items-start gap-2">
               <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
-              <span><strong>Parceiros de serviço</strong> (processadores de pagamento, plataformas de e-mail, servidores em nuvem) que atuam sob contratos de confidencialidade e proteção de dados;</span>
+              <span><strong>Processadores de pagamento</strong> (ex: Stripe, PagSeguro, Hotmart), para viabilizar cobranças e reembolsos de forma segura;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span><strong>Plataformas de comunicação</strong> (ex: provedores de e-mail marketing, ferramentas de automação), para envio de comunicações autorizadas;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span><strong>Ferramentas de análise</strong> (ex: Google Analytics, Meta Pixel), para entendimento do comportamento de uso e otimização da plataforma;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span><strong>Provedores de infraestrutura em nuvem</strong>, para hospedagem segura da plataforma e dos dados;</span>
             </li>
             <li class="flex items-start gap-2">
               <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
@@ -329,121 +368,162 @@
             </li>
             <li class="flex items-start gap-2">
               <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
-              <span><strong>Terceiros adquirentes</strong> em caso de fusão, aquisição ou reestruturação societária, sempre preservando seus direitos.</span>
+              <span><strong>Terceiros adquirentes</strong> em caso de fusão, aquisição ou reestruturação societária, sempre preservando seus direitos como titular.</span>
             </li>
           </ul>
+          <p>Todos os parceiros e fornecedores de serviço que tratam dados pessoais em nosso nome operam sob contratos de confidencialidade e obrigações de proteção de dados compatíveis com a LGPD.</p>
         </div>
       </section>
 
       <hr style="border-color:#D4D4CC; margin: 0 0 2.5rem 0;" />
 
-      <!-- ── 5. Cookies ── -->
-      <section id="cookies" class="section-block mb-10">
+      <!-- ── 5. Transferência Internacional ── -->
+      <section id="transferencia" class="section-block mb-10">
         <div class="flex items-center gap-3 mb-4">
           <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">5</span>
-          <h2 class="text-xl font-bold" style="color:#212121;">Cookies e Tecnologias Similares</h2>
+          <h2 class="text-xl font-bold" style="color:#212121;">Transferência Internacional de Dados</h2>
         </div>
         <div class="pl-11 space-y-3 text-base leading-relaxed" style="color:#212121;">
-          <p>Utilizamos cookies e tecnologias similares para melhorar a experiência de uso, personalizar conteúdo e analisar o tráfego. Os tipos de cookies usados são:</p>
-          <div class="grid sm:grid-cols-2 gap-3 mt-2">
-            <div class="rounded-lg p-4" style="background:#F4F4EE; border:1px solid #D4D4CC;">
-              <p class="font-semibold text-sm mb-1">Essenciais</p>
-              <p class="text-sm" style="color:#717D71;">Necessários para o funcionamento básico da plataforma. Não podem ser desativados.</p>
-            </div>
-            <div class="rounded-lg p-4" style="background:#F4F4EE; border:1px solid #D4D4CC;">
-              <p class="font-semibold text-sm mb-1">Analíticos</p>
-              <p class="text-sm" style="color:#717D71;">Coleta dados de navegação para análise de desempenho (ex: Google Analytics).</p>
-            </div>
-            <div class="rounded-lg p-4" style="background:#F4F4EE; border:1px solid #D4D4CC;">
-              <p class="font-semibold text-sm mb-1">Marketing</p>
-              <p class="text-sm" style="color:#717D71;">Rastreiam interações para exibição de anúncios relevantes (ex: Meta Pixel, Google Ads).</p>
-            </div>
-            <div class="rounded-lg p-4" style="background:#F4F4EE; border:1px solid #D4D4CC;">
-              <p class="font-semibold text-sm mb-1">Preferências</p>
-              <p class="text-sm" style="color:#717D71;">Lembram suas configurações e preferências de navegação.</p>
-            </div>
-          </div>
-          <p>Você pode gerenciar ou desativar cookies a qualquer momento pelas configurações do seu navegador.</p>
-        </div>
-      </section>
-
-      <hr style="border-color:#D4D4CC; margin: 0 0 2.5rem 0;" />
-
-      <!-- ── 6. Retenção ── -->
-      <section id="retencao" class="section-block mb-10">
-        <div class="flex items-center gap-3 mb-4">
-          <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">6</span>
-          <h2 class="text-xl font-bold" style="color:#212121;">Retenção de Dados</h2>
-        </div>
-        <div class="pl-11 space-y-3 text-base leading-relaxed" style="color:#212121;">
-          <p>Mantemos seus dados pelo período necessário para cumprir as finalidades descritas nesta Política, observando os seguintes prazos mínimos:</p>
+          <p>Alguns dos nossos parceiros de serviço (como plataformas de hospedagem em nuvem, ferramentas de analytics e provedores de e-mail) podem estar localizados ou operar servidores fora do Brasil.</p>
+          <p>Quando seus dados forem transferidos internacionalmente, garantimos que essa transferência ocorre em conformidade com o art. 33 da LGPD, por meio de:</p>
           <ul class="space-y-2">
             <li class="flex items-start gap-2">
               <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
-              <span><strong>Dados cadastrais:</strong> enquanto houver relação contratual ativa + 5 anos após o encerramento;</span>
+              <span>Países com grau de proteção de dados adequado, reconhecido pela ANPD;</span>
             </li>
             <li class="flex items-start gap-2">
               <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
-              <span><strong>Dados financeiros:</strong> 10 anos (obrigação fiscal);</span>
+              <span>Cláusulas contratuais padrão de proteção de dados com os fornecedores;</span>
             </li>
             <li class="flex items-start gap-2">
               <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
-              <span><strong>Logs de acesso:</strong> 6 meses, conforme Marco Civil da Internet (Lei nº 12.965/2014).</span>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <hr style="border-color:#D4D4CC; margin: 0 0 2.5rem 0;" />
-
-      <!-- ── 7. Segurança ── -->
-      <section id="seguranca" class="section-block mb-10">
-        <div class="flex items-center gap-3 mb-4">
-          <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">7</span>
-          <h2 class="text-xl font-bold" style="color:#212121;">Segurança dos Dados</h2>
-        </div>
-        <div class="pl-11 space-y-3 text-base leading-relaxed" style="color:#212121;">
-          <p>Adotamos medidas técnicas e organizacionais apropriadas para proteger seus dados contra acesso não autorizado, alteração, divulgação ou destruição, incluindo:</p>
-          <ul class="space-y-2">
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
-              <span>Criptografia TLS/SSL em todas as transmissões de dados;</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
-              <span>Controle de acesso baseado em perfis e autenticação multifator;</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
-              <span>Auditorias periódicas de segurança e testes de vulnerabilidade;</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
-              <span>Treinamentos regulares de equipe sobre privacidade e segurança da informação.</span>
+              <span>Certificações e programas de conformidade reconhecidos internacionalmente.</span>
             </li>
           </ul>
           <p class="text-sm rounded-lg px-4 py-3 mt-2" style="background:#F4F4EE; border-left:3px solid #717D71; color:#717D71;">
-            Em caso de incidente de segurança que possa comprometer seus dados, notificaremos a ANPD e os titulares afetados dentro dos prazos legais.
+            Seus direitos como titular de dados são mantidos integralmente, independentemente do país onde os dados são armazenados ou processados.
           </p>
         </div>
       </section>
 
       <hr style="border-color:#D4D4CC; margin: 0 0 2.5rem 0;" />
 
-      <!-- ── 8. Direitos LGPD ── -->
-      <section id="seus-direitos" class="section-block mb-10">
+      <!-- ── 6. Cookies ── -->
+      <section id="cookies" class="section-block mb-10">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">6</span>
+          <h2 class="text-xl font-bold" style="color:#212121;">Cookies e Tecnologias Similares</h2>
+        </div>
+        <div class="pl-11 space-y-3 text-base leading-relaxed" style="color:#212121;">
+          <p>Utilizamos cookies e tecnologias similares (pixels, tags, local storage) para melhorar a experiência de uso, personalizar conteúdo e analisar o tráfego. Os tipos utilizados são:</p>
+          <div class="grid sm:grid-cols-2 gap-3 mt-2">
+            <div class="rounded-lg p-4" style="background:#F4F4EE; border:1px solid #D4D4CC;">
+              <p class="font-semibold text-sm mb-1">Essenciais</p>
+              <p class="text-sm" style="color:#717D71;">Necessários para o funcionamento básico da plataforma (autenticação, sessão). Não podem ser desativados.</p>
+            </div>
+            <div class="rounded-lg p-4" style="background:#F4F4EE; border:1px solid #D4D4CC;">
+              <p class="font-semibold text-sm mb-1">Analíticos</p>
+              <p class="text-sm" style="color:#717D71;">Coletam dados de navegação para análise de desempenho e comportamento (ex: Google Analytics 4).</p>
+            </div>
+            <div class="rounded-lg p-4" style="background:#F4F4EE; border:1px solid #D4D4CC;">
+              <p class="font-semibold text-sm mb-1">Marketing</p>
+              <p class="text-sm" style="color:#717D71;">Rastreiam interações para exibição de anúncios relevantes e remarketing (ex: Meta Pixel, Google Ads).</p>
+            </div>
+            <div class="rounded-lg p-4" style="background:#F4F4EE; border:1px solid #D4D4CC;">
+              <p class="font-semibold text-sm mb-1">Preferências</p>
+              <p class="text-sm" style="color:#717D71;">Lembram suas configurações de navegação e preferências de exibição da plataforma.</p>
+            </div>
+          </div>
+          <p>Você pode gerenciar, restringir ou desativar cookies nas configurações do seu navegador. A desativação de cookies essenciais pode impactar o funcionamento da plataforma.</p>
+        </div>
+      </section>
+
+      <hr style="border-color:#D4D4CC; margin: 0 0 2.5rem 0;" />
+
+      <!-- ── 7. Retenção ── -->
+      <section id="retencao" class="section-block mb-10">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">7</span>
+          <h2 class="text-xl font-bold" style="color:#212121;">Retenção de Dados</h2>
+        </div>
+        <div class="pl-11 space-y-3 text-base leading-relaxed" style="color:#212121;">
+          <p>Mantemos seus dados pelo período necessário para cumprir as finalidades descritas nesta Política, observando os seguintes prazos:</p>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span><strong>Dados cadastrais e de progresso:</strong> durante a vigência do plano ativo + até 5 anos após o encerramento, para fins de suporte e obrigações legais;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span><strong>Dados financeiros e de faturamento:</strong> 10 anos, conforme exigência fiscal e contábil;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span><strong>Logs de acesso:</strong> 6 meses, conforme o Marco Civil da Internet (Lei nº 12.965/2014);</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span><strong>Dados de comunicações de marketing:</strong> enquanto houver consentimento ativo; excluídos em até 15 dias após revogação do consentimento.</span>
+            </li>
+          </ul>
+          <p>Após o cancelamento da conta, os dados serão excluídos em até <strong>15 dias</strong>, salvo os que devam ser mantidos por obrigação legal.</p>
+        </div>
+      </section>
+
+      <hr style="border-color:#D4D4CC; margin: 0 0 2.5rem 0;" />
+
+      <!-- ── 8. Segurança ── -->
+      <section id="seguranca" class="section-block mb-10">
         <div class="flex items-center gap-3 mb-4">
           <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">8</span>
+          <h2 class="text-xl font-bold" style="color:#212121;">Segurança dos Dados</h2>
+        </div>
+        <div class="pl-11 space-y-3 text-base leading-relaxed" style="color:#212121;">
+          <p>Adotamos medidas técnicas e organizacionais adequadas para proteger seus dados contra acesso não autorizado, alteração, divulgação, destruição ou perda acidental, incluindo:</p>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Criptografia TLS/SSL em todas as transmissões de dados entre o seu dispositivo e nossos servidores;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Controle de acesso baseado em perfis e autenticação com múltiplos fatores para a equipe interna;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Auditorias periódicas de segurança, testes de vulnerabilidade e monitoramento contínuo da infraestrutura;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Treinamentos regulares da equipe sobre boas práticas de privacidade e segurança da informação;</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full mt-2.5 flex-shrink-0" style="background:#ED4E23;"></span>
+              <span>Plano de resposta a incidentes de segurança, com procedimentos documentados de notificação.</span>
+            </li>
+          </ul>
+          <p class="text-sm rounded-lg px-4 py-3 mt-2" style="background:#F4F4EE; border-left:3px solid #717D71; color:#717D71;">
+            Em caso de incidente de segurança que possa comprometer seus dados, notificaremos a <strong style="color:#212121;">ANPD</strong> e os titulares afetados dentro dos prazos legais estabelecidos pela LGPD.
+          </p>
+        </div>
+      </section>
+
+      <hr style="border-color:#D4D4CC; margin: 0 0 2.5rem 0;" />
+
+      <!-- ── 9. Direitos LGPD ── -->
+      <section id="seus-direitos" class="section-block mb-10">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">9</span>
           <h2 class="text-xl font-bold" style="color:#212121;">Seus Direitos (LGPD)</h2>
         </div>
         <div class="pl-11 space-y-3 text-base leading-relaxed" style="color:#212121;">
-          <p>Nos termos da LGPD, você tem os seguintes direitos sobre seus dados pessoais:</p>
+          <p>Nos termos do art. 18 da LGPD, você tem os seguintes direitos sobre seus dados pessoais:</p>
           <div class="grid sm:grid-cols-2 gap-3 mt-2">
             <div class="flex gap-3 rounded-lg p-4" style="background:#F4F4EE; border:1px solid #D4D4CC;">
               <span class="text-xs font-bold px-2 py-0.5 rounded-full self-start mt-0.5 text-white" style="background:#ED4E23;">Art. 18</span>
               <div>
                 <p class="font-semibold text-sm">Confirmação e Acesso</p>
-                <p class="text-xs mt-0.5" style="color:#717D71;">Confirmar se tratamos seus dados e acessá-los.</p>
+                <p class="text-xs mt-0.5" style="color:#717D71;">Confirmar se tratamos seus dados e obter uma cópia deles.</p>
               </div>
             </div>
             <div class="flex gap-3 rounded-lg p-4" style="background:#F4F4EE; border:1px solid #D4D4CC;">
@@ -457,21 +537,21 @@
               <span class="text-xs font-bold px-2 py-0.5 rounded-full self-start mt-0.5 text-white" style="background:#ED4E23;">Art. 18</span>
               <div>
                 <p class="font-semibold text-sm">Eliminação</p>
-                <p class="text-xs mt-0.5" style="color:#717D71;">Solicitar a exclusão de dados tratados com seu consentimento.</p>
+                <p class="text-xs mt-0.5" style="color:#717D71;">Solicitar a exclusão de dados tratados com base em seu consentimento.</p>
               </div>
             </div>
             <div class="flex gap-3 rounded-lg p-4" style="background:#F4F4EE; border:1px solid #D4D4CC;">
               <span class="text-xs font-bold px-2 py-0.5 rounded-full self-start mt-0.5 text-white" style="background:#ED4E23;">Art. 18</span>
               <div>
                 <p class="font-semibold text-sm">Portabilidade</p>
-                <p class="text-xs mt-0.5" style="color:#717D71;">Obter seus dados em formato estruturado e legível.</p>
+                <p class="text-xs mt-0.5" style="color:#717D71;">Receber seus dados em formato estruturado e legível por máquina.</p>
               </div>
             </div>
             <div class="flex gap-3 rounded-lg p-4" style="background:#F4F4EE; border:1px solid #D4D4CC;">
               <span class="text-xs font-bold px-2 py-0.5 rounded-full self-start mt-0.5 text-white" style="background:#ED4E23;">Art. 18</span>
               <div>
                 <p class="font-semibold text-sm">Revogação de Consentimento</p>
-                <p class="text-xs mt-0.5" style="color:#717D71;">Retirar seu consentimento a qualquer momento.</p>
+                <p class="text-xs mt-0.5" style="color:#717D71;">Retirar seu consentimento a qualquer momento, sem prejuízo ao tratamento anterior.</p>
               </div>
             </div>
             <div class="flex gap-3 rounded-lg p-4" style="background:#F4F4EE; border:1px solid #D4D4CC;">
@@ -488,51 +568,54 @@
 
       <hr style="border-color:#D4D4CC; margin: 0 0 2.5rem 0;" />
 
-      <!-- ── 9. Menores ── -->
+      <!-- ── 10. Menores ── -->
       <section id="menores" class="section-block mb-10">
         <div class="flex items-center gap-3 mb-4">
-          <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">9</span>
+          <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">10</span>
           <h2 class="text-xl font-bold" style="color:#212121;">Menores de Idade</h2>
         </div>
         <div class="pl-11 space-y-3 text-base leading-relaxed" style="color:#212121;">
-          <p>Nossos serviços são destinados a pessoas maiores de 18 anos. Não coletamos intencionalmente dados de crianças ou adolescentes. Caso identifiquemos coleta inadvertida de dados de menores, excluiremos as informações imediatamente.</p>
-          <p>Se você é responsável por um menor e acredita que seus dados foram coletados, entre em contato conosco.</p>
+          <p>Nossos serviços são destinados exclusivamente a pessoas maiores de 18 anos. Não coletamos intencionalmente dados pessoais de crianças ou adolescentes.</p>
+          <p>Caso identifiquemos coleta inadvertida de dados de menores, excluiremos essas informações imediatamente e, se aplicável, notificaremos os responsáveis legais.</p>
+          <p>Se você é responsável legal por um menor e acredita que seus dados foram coletados por nossa plataforma, entre em contato com nosso DPO pelo e-mail <a href="mailto:privacidade@trilhaperformancedigital.com.br" class="font-semibold hover:opacity-80 transition-opacity" style="color:#ED4E23;">privacidade@trilhaperformancedigital.com.br</a>.</p>
         </div>
       </section>
 
       <hr style="border-color:#D4D4CC; margin: 0 0 2.5rem 0;" />
 
-      <!-- ── 10. Alterações ── -->
+      <!-- ── 11. Alterações ── -->
       <section id="alteracoes" class="section-block mb-10">
         <div class="flex items-center gap-3 mb-4">
-          <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">10</span>
+          <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">11</span>
           <h2 class="text-xl font-bold" style="color:#212121;">Alterações nesta Política</h2>
         </div>
         <div class="pl-11 space-y-3 text-base leading-relaxed" style="color:#212121;">
-          <p>Podemos atualizar esta Política periodicamente. Quando realizarmos alterações relevantes, notificaremos você por e-mail ou por aviso destacado em nossa plataforma com pelo menos <strong>15 dias de antecedência</strong>.</p>
-          <p>O uso continuado dos nossos serviços após a vigência das alterações constitui aceitação da nova versão.</p>
+          <p>Podemos atualizar esta Política periodicamente para refletir mudanças nos nossos serviços, na legislação aplicável ou nas nossas práticas de privacidade.</p>
+          <p>Quando realizarmos alterações relevantes, notificaremos você por <strong>e-mail</strong> ou por <strong>aviso destacado na plataforma</strong>, com pelo menos <strong>15 dias de antecedência</strong>.</p>
+          <p>A versão vigente estará sempre disponível nesta página, identificada pela data de última atualização exibida no topo do documento. O uso continuado dos nossos serviços após a vigência das alterações constitui aceitação da nova versão.</p>
         </div>
       </section>
 
       <hr style="border-color:#D4D4CC; margin: 0 0 2.5rem 0;" />
 
-      <!-- ── 11. Contato ── -->
+      <!-- ── 12. Contato ── -->
       <section id="contato" class="section-block mb-10">
         <div class="flex items-center gap-3 mb-4">
-          <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">11</span>
-          <h2 class="text-xl font-bold" style="color:#212121;">Contato e Encarregado de Dados</h2>
+          <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:#ED4E23;">12</span>
+          <h2 class="text-xl font-bold" style="color:#212121;">Contato e Encarregado de Dados (DPO)</h2>
         </div>
         <div class="pl-11 space-y-3 text-base leading-relaxed" style="color:#212121;">
-          <p>Para dúvidas, solicitações ou reclamações relacionadas a esta Política, entre em contato com nosso <strong>Encarregado de Proteção de Dados (DPO)</strong>:</p>
+          <p>Para dúvidas, solicitações de exercício de direitos ou reclamações relacionadas a esta Política, entre em contato com nosso <strong>Encarregado de Proteção de Dados (DPO)</strong>:</p>
           <div class="rounded-xl p-5" style="background:#F4F4EE; border:1px solid #D4D4CC;">
             <p class="font-bold text-base">Trilha Performance Digital</p>
-            <p class="text-sm mt-1" style="color:#717D71;">Encarregado de Proteção de Dados</p>
+            <p class="text-sm mt-1" style="color:#717D71;">Encarregado de Proteção de Dados (DPO)</p>
             <div class="mt-3 space-y-1">
               <p class="text-sm flex items-center gap-2">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ED4E23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                 <a href="mailto:privacidade@trilhaperformancedigital.com.br" class="hover:opacity-80 transition-opacity" style="color:#ED4E23;">privacidade@trilhaperformancedigital.com.br</a>
               </p>
             </div>
+            <p class="text-xs mt-3" style="color:#717D71;">Tempo de resposta: até <strong style="color:#212121;">15 dias úteis</strong>.</p>
           </div>
           <p class="text-sm" style="color:#717D71;">Você também pode registrar uma reclamação junto à <strong style="color:#212121;">Autoridade Nacional de Proteção de Dados (ANPD)</strong> em <a href="https://www.gov.br/anpd" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity" style="color:#ED4E23;">www.gov.br/anpd</a>.</p>
         </div>
@@ -567,10 +650,8 @@
   </footer>
 
   <script>
-    // Update year
     document.getElementById('footer-year').textContent = new Date().getFullYear();
 
-    // Intersection Observer for section animations
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -581,7 +662,6 @@
 
     document.querySelectorAll('.section-block').forEach(el => observer.observe(el));
 
-    // TOC active highlight on scroll
     const sections = document.querySelectorAll('section[id]');
     const tocLinks = document.querySelectorAll('.toc-link');
 
